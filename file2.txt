@@ -1,0 +1,17 @@
+{
+  "Motors": [
+    {"id": "motor_neck_vertical", "range": [0, 180]},
+    {"id": "motor_neck_horizontal", "range": [0, 180]}
+  ],
+  "Skills": [
+    {"id": "photograph", "description": "부착된 카메라로 사진을 찍고 다중 모달 LLM으로 전송합니다."},
+    {"id": "blink_led", "parameters": {"led_pin": 10, "duration": 500, "times": 3}, "description": "행동을 표시하기 위해 LED를 깜빡입니다."}
+  ],
+  "Limitations": [
+    {"motor": "motor_neck_vertical", "max_speed": "medium"},
+    {"motor_speeds": ["slow", "medium", "fast"]},
+    {"motors_normal_position": 90}
+  ],
+  "Personality": ["재미있는", "섬세한"],
+  "Agency_Level": "높음"
+}
