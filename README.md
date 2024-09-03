@@ -140,13 +140,15 @@ def send_to_arduino(command):
     time.sleep(0.1)
 ```
 
-안드로이드 에서 음성으로 명령을 전달하면 파이썬 서버에 들어가고 
+안드로이드 에서 음성으로 명령을 전달하면 파이썬 서버에 들어가고 OpenAI 에 연결된 gpt가 해석해서 명령을 자바 서버로 보내는데 성공했다.
 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/2125cb79-f165-425f-bf16-28f50509485c" width="400" height="600">
 <img src="https://github.com/user-attachments/assets/6c6ca3ef-5f4d-4c50-baf7-71c6c7fab78a" width="400" height="600">
 </div>
 
+위 그림에서 알수 있듯 "위에 봐 봐" 라고 명령을 입력했는데 아래를 보는 오류를 보여주며 서버 통신을 2번을 거치다 보니  <br>
+10번 정도 시도하면 한 3~4번 정도는 틀린 동작을 명령했다 정확성이 좀 떨어지는데 txt 파일을 수정하여 인식의 범위를 좁혀 보거나 <br>
 
 
 
