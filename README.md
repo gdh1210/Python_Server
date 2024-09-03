@@ -14,6 +14,9 @@ command를 송출하면 자바 서버에서 이를 인식하고 서보모터를 
 자바 서버 링크 - https://github.com/gdh1210/Java_Server_Host
 
 # myOpenAI_server.py
+
+서버 소캣을 열고 UDP 서버를 여는 역활
+
 ```py
 import socket
 from machine_script import get_machine_script, execute_machine_script
@@ -39,6 +42,9 @@ while True:
 
 
 # machine_script.py
+
+openAI 연결 부분 API 키 관리 및 자바 UDP 서버로 명령 전달 하는 기능을 가지고 있다.
+
 ```py
 from openai import OpenAI
 
@@ -133,3 +139,16 @@ def send_to_arduino(command):
     
     time.sleep(0.1)
 ```
+
+안드로이드 에서 음성으로 명령을 전달하면 파이썬 서버에 들어가고 
+
+<div align="center">
+<img src="https://github.com/user-attachments/assets/2125cb79-f165-425f-bf16-28f50509485c" width="400" height="600">
+<img src="https://github.com/user-attachments/assets/6c6ca3ef-5f4d-4c50-baf7-71c6c7fab78a" width="400" height="600">
+</div>
+
+
+
+
+
+
